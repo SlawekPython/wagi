@@ -16,18 +16,18 @@ for nr in range(int(sys.argv[1])):
 
     elif package_weight + element <= 20:
         package_weight = package_weight + element
-        #print(package_weight)
-
-    elif package_number +=1
-        empty_box_weight = 20 - package_weight
 
     else:
-        empty_box_weight = empty_box_weight + empty_box_weight
-        sum_sent_loaded_empty_kg = package_number * 20
-        sum_of_empty_kg_sent = sum_sent_loaded_empty_kg - empty_box_weight
+        package_number +=1
+        print(f"paczka numer: {package_number} waży {package_weight}")
+        empty_box_weight = 20 - package_weight
+        print(f"puste kilogramy w paczce numer {package_number} {empty_box_weight}")
+
+empty_box_weight = empty_box_weight + empty_box_weight
+
+sum_sent_loaded_empty_kg = package_number * 20
+sum_of_empty_kg_sent = sum_sent_loaded_empty_kg - empty_box_weight
 
 print(f"Liczba paczek wysłanych: {package_number}")
 print(f"Suma kilogramów wyslanych: {package_weight}kg")
 print(f"Sum of empty kilogram: {sum_of_empty_kg_sent}kg")
-
-#print(f"Sum of empty kilograms: {sum_of_empty_kilograms}")
